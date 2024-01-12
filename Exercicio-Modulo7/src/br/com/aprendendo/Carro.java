@@ -1,16 +1,21 @@
 package br.com.aprendendo;
 
-import java.io.DataInputStream;
-
 public class Carro {
 
     private int id;
-
     private String modelo;
-
     private String cor;
+    private int anoLancamento;
 
-    private DataInputStream ano;
+    // Construtor
+    public Carro(int id, String modelo, String cor, int anoLancamento) {
+        this.id = id;
+        this.modelo = modelo;
+        this.cor = cor;
+        this.anoLancamento = anoLancamento;
+    }
+
+    // Métodos getters e setters
 
     public int getId() {
         return id;
@@ -36,17 +41,16 @@ public class Carro {
         this.cor = cor;
     }
 
-    public DataInputStream getAnoLancamento() {
-        return ano;
+    public int getAnoLancamento() {
+        return anoLancamento;
     }
 
-    public void setAnoLancamento(DataInputStream anoLancamento) {
-        this.ano = anoLancamento;
+    public void setAnoLancamento(int anoLancamento) {
+        this.anoLancamento = anoLancamento;
     }
 
-    public void ligarCarro(){
+    // Método adicional
+    public void ligarCarro() {
         System.out.println("Ligando carro!");
     }
 }
-
-
