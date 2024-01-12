@@ -6,6 +6,7 @@ package br.com.nicolasdev;
  */
 public class Exemplos {
 
+    // REGIAO DE VARIAVEIS
     private int codigo = 1;
 
     private long codigoMAior = 29182711;
@@ -22,16 +23,24 @@ public class Exemplos {
 
     private byte bi;
 
-    public String retornaTexto(){
+
+    //MÉTODOS BÁSICOS
+    public int retornarCodigo(){
+        this.codigo = 0;
+        return  15;
+    }
+
+    public String retornarTexto(){
         return "oi oi oi";
     }
 
-    public long retornaLong(long num){
+    public long retornarLong(long num){
         return num;
     };
 
     public int retornaInteiro(){
-        return 10;
+        int val = 10; //variavel escopo de metodo, só tenho acesso a esse metodo dentro desse escopo;
+        return val;
     }
 
 }
