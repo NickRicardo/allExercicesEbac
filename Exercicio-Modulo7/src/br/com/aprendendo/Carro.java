@@ -16,7 +16,6 @@ public class Carro {
     }
 
     // Métodos getters e setters
-
     public int getId() {
         return id;
     }
